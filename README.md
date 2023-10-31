@@ -18,4 +18,5 @@ Uma e pelo terminal na pasta "scriptDoDesafio" no arquivo main.py
 
 e outro e usando o django, para isso voce vai precisar escrever esse comando apos instalar o requirements
 comando para ligar o servidor django:
-python manage.py runserver      
+   ```bash
+   python manage.py runserver      
