@@ -2,12 +2,22 @@
 
 E um buscador defilmes, que permite aos usuários buscar informações sobre filmes e adicioná-los aos favoritos.
 
-E tem 2 formas de usar, 1 e pelo script e outro pelo site(django)
-## Demonstração
+E tem 2 formas de usar, 1 e pelo script e outro pelo site(django), user qual preferir.
+
+Ele e um codigo simples e facil de ser usado, e lido, nao foi usado banco de dados.
+
+## Como ele funciona?
+
+Primeiro ele impota as biblioteas a ser usada na manipulaçoa da API, e tem um classe "FilmeAPI" que interage com uma API de informações de filmes (OMDb). A classe possui métodos para tratar erros HTTP e da API, além de uma funcionalidade para adicionar filmes aos favoritos, que são armazenados em um arquivo JSON. O programa principal permite aos usuários escolher entre pesquisar filmes, mostrar favoritos ou sair do programa.
+
+
+## Demonstração dele funcionando
 
 **Terminal:** https://www.youtube.com/watch?v=UgVqwpBplbo&ab_channel=MARCOS
 
 **Site Django:** https://www.youtube.com/watch?v=vz-otp4cywI&ab_channel=MARCOS
+
+
 
 ## Clone o repositório
 
