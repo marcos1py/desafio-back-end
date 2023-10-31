@@ -1,24 +1,48 @@
-## README - Uso do FilmeView
+Introdução
 
-Este é um aplicativo Django que permite aos usuários buscar informações sobre filmes e adicioná-los aos favoritos.
+E um aplicativo Django/script que permite aos usuários buscar informações sobre filmes e adicioná-los aos favoritos.
 
-### Configuração Inicial
+Clone o repositório:
 
-1. Clone o repositório, navegue até o diretório do projeto, crie um ambiente virtual Python (recomendado) e ative-o, e instale as dependências necessárias a partir do arquivo `requirements.txt`:
+git clone https://github.com/marcos1py/desafio-back-end
 
-   ```bash
-   git clone https://github.com/marcos1py/desafio-back-end
-   cd desafio-back-end
-   python -m venv venv
-   .\venv\Scripts\activate
-   pip install -r requirements.txt
+Crie um ambiente virtual Python e ative-o:
 
-Tem 2 formas de testar
-Uma e pelo terminal na pasta `scriptDoDesafio` no arquivo `main.py` 
-Video de como e no terminal: https://www.youtube.com/watch?v=UgVqwpBplbo&ab_channel=MARCOS
+windowns
+python3 -m venv venv
 
-e outro e usando o django, para isso voce vai precisar escrever esse comando apos instalar o requirements
-comando para ligar o servidor django:
-Video de como e no Site: https://www.youtube.com/watch?v=vz-otp4cywI&feature=youtu.be&ab_channel=MARCOS
-   ```bash
-   python manage.py runserver      
+linux
+source venv/bin/activate
+
+Instale as dependências:
+pip install -r requirements.txt
+
+Instruções de uso
+
+* **Usando o Terminal:**
+
+Entre na pasta `scriptDoDesafio` no arquivo `main.py` 
+Video demonstraçao no terminal: https://www.youtube.com/watch?v=UgVqwpBplbo&ab_channel=MARCOS
+
+* **Usando o site Django:**
+
+Faz o migrate:
+python manage.py migrate
+
+E quando quiser usar/testa basta colocar esse comando no terminal
+python manage.py runserver
+
+Navegue para http://localhost:8000 no seu navegador.
+
+Demostraçao de como o site: https://www.youtube.com/watch?v=vz-otp4cywI&feature=youtu.be&ab_channel=MARCOS
+
+Funcionalidades
+
+Busca de filmes por título, ano de lançamento ou gênero.
+Adição de filmes aos favoritos.
+Visualização da lista de filmes favoritos.
+
+Demonstração
+
+Terminal: https://www.youtube.com/watch?v=UgVqwpBplbo&ab_channel=MARCOS
+Site Django: https://www.youtube.com/watch?v=vz-otp4cywI&feature=youtu.be&ab_channel=MARCOS
