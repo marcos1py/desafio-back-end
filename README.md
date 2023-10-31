@@ -14,7 +14,7 @@ Este é um aplicativo Django que permite aos usuários buscar informações sobr
    pip install -r requirements.txt
 
 Tem 2 formas de testar
-Uma e pelo terminal na pasta "scriptDoDesafio" no arquivo main.py 
+Uma e pelo terminal na pasta `scriptDoDesafio` no arquivo `main.py` 
 
 e outro e usando o django, para isso voce vai precisar escrever esse comando apos instalar o requirements
 comando para ligar o servidor django:
