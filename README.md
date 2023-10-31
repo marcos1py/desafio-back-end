@@ -15,8 +15,10 @@ Este é um aplicativo Django que permite aos usuários buscar informações sobr
 
 Tem 2 formas de testar
 Uma e pelo terminal na pasta `scriptDoDesafio` no arquivo `main.py` 
+Video de como e no terminal: https://www.youtube.com/watch?v=UgVqwpBplbo&ab_channel=MARCOS
 
 e outro e usando o django, para isso voce vai precisar escrever esse comando apos instalar o requirements
 comando para ligar o servidor django:
+Video de como e no Site: https://www.youtube.com/watch?v=vz-otp4cywI&feature=youtu.be&ab_channel=MARCOS
    ```bash
    python manage.py runserver      
