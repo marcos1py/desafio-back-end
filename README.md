@@ -3,6 +3,11 @@
 E um buscador defilmes, que permite aos usuários buscar informações sobre filmes e adicioná-los aos favoritos.
 
 E tem 2 formas de usar, 1 e pelo script e outro pelo site(django)
+## Demonstração
+
+**Terminal:** https://www.youtube.com/watch?v=UgVqwpBplbo&ab_channel=MARCOS
+
+**Site Django:** https://www.youtube.com/watch?v=vz-otp4cywI&ab_channel=MARCOS
 
 ## Clone o repositório
 
@@ -70,10 +75,4 @@ Navegue para http://localhost:8000 no seu navegador.
 * **Busca de filmes por título, ano de lançamento ou gênero.**
 * **Adição de filmes aos favoritos.**
 * **Visualização da lista de filmes favoritos.**
-
-## Demonstração
-
-**Terminal:** https://www.youtube.com/watch?v=UgVqwpBplbo&ab_channel=MARCOS
-
-**Site Django:** https://www.youtube.com/watch?v=vz-otp4cywI&ab_channel=MARCOS
 
