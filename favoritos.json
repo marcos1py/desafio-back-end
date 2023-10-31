@@ -1,0 +1,20 @@
+[
+  {
+    "ID": 1,
+    "Nome": "Rio",
+    "Ano": "2011",
+    "Classifica\u00e7\u00e3o": "PG",
+    "Sinopse": "When Blu, a domesticated macaw from small-town Minnesota, meets the fiercely independent Jewel, he takes off on an adventure to Rio de Janeiro with the bird of his dreams.",
+    "Diretor": "Carlos Saldanha",
+    "img": "https://m.media-amazon.com/images/M/MV5BMTU2MDY3MzAzMl5BMl5BanBnXkFtZTcwMTg0NjM5NA@@._V1_SX300.jpg"
+  },
+  {
+    "ID": 2,
+    "Nome": "Avatar",
+    "Ano": "2009",
+    "Classifica\u00e7\u00e3o": "PG-13",
+    "Sinopse": "A paraplegic Marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.",
+    "Diretor": "James Cameron",
+    "img": "https://m.media-amazon.com/images/M/MV5BZDA0OGQxNTItMDZkMC00N2UyLTg3MzMtYTJmNjg3Nzk5MzRiXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_SX300.jpg"
+  }
+]

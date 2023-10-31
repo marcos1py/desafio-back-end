@@ -1,0 +1,76 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Busca de Filmes</title>
+    <link rel="stylesheet" href="{% static 'filmes/style.css' %}">
+    
+</head>
+<body>
+    <div class="container">
+
+    
+        <div class="">
+            <h1 class="titulo">Busca de Filmes</h1>
+            <form class="busca_input" method="post" action="">
+                {% csrf_token %}
+                <input type="text" name="titulo_filme" >
+                <button type="submit">Buscar</button>
+            </form>
+            <h2>Resultados:</h2>
+            <div id="movie-info" class="hidden">
+                
+                <div>
+                    {% if info_filme.img == None or info_filme.img == "N/A" %}
+                        <img src="{% static 'filmes/sem-foto.jpg' %}" alt="">
+                    {% else %}
+                        <img src="{{ info_filme.img }}" alt="">  
+                    {% endif %}
+
+                </div>
+                <div class='espaçamento'>
+                    <p><strong>Nome:</strong> {{ info_filme.Nome }}</p>
+                    <p><strong>Ano:</strong> {{ info_filme.Ano }}</p>
+                    <p><strong>Classificação:</strong> {{ info_filme.Classificação }}</p>
+                    <p><strong>Diretor:</strong> {{ info_filme.Diretor }}</p>
+                    <p><strong>Sinopse:</strong> {{ info_filme.Sinopse }} </p>
+                    {% if info_filme%}
+                    <form action="" method="post">
+                        {% csrf_token %}
+                        <input type="hidden" name="add_favorito" value="true">
+                        
+                        <button type="submit">Adicionar aos Favoritos</button>
+                        
+                    
+                    </form>
+                    {% endif %}
+                    <p style="color: red;">{{mensagens}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="">
+            <h2>Favoritos</h2>
+            {% for favorito in favoritos %}
+            <div id="movie-info" class="hidden">
+                    <div>
+                        {% if favorito.img == "N/A" %}
+                        <img src="{% static 'filmes/sem-foto.jpg' %}" alt="">
+                        {% else %}
+                        <img src="{{ favorito.img }}" alt="">  
+                        {% endif %}
+                    </div>
+                    <div>
+                        <p>ID: {{favorito.ID}}</p>
+                        <p>Nome: {{ favorito.Nome }}</p>
+                        <p>Ano: {{ favorito.Ano }}</p>
+                        <p>Classificação: {{ favorito.Classificação }}</p>
+                        <p>Diretor: {{ favorito.Diretor }}</p>
+                        <p>Sinopse: {{ favorito.Sinopse }}</p>
+                    </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>
